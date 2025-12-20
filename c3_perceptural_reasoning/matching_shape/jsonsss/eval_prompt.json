@@ -1,0 +1,260 @@
+{
+  "01": {
+    "task_description": "This task is a visual shape-matching exercise. The input is a clean white worksheet titled 'Shape Matching', showing colorful objects on the left and geometric shapes on the right. The video model should only draw connecting lines between matching pairs, without moving, resizing, or altering any objects. The background must remain completely white and unchanged. The animation should only show the smooth drawing of lines gradually appearing from left to right.",
+  
+    "ground_truth_matching": {
+      "egg": "second_from_bottom",
+      "gift_box": "second_from_top",
+      "warning_sign": "top",
+      "clock": "bottom"
+    },
+  
+    "scoring_criteria": [
+      {
+        "dimension": "Accuracy",
+        "weight": 4,
+        "description": "1 point per correct line. No points for wrong or missing connections."
+      },
+      {
+        "dimension": "Line Behavior",
+        "weight": 2,
+        "description": "Lines should appear smoothly from left to right. Deduct 1–2 points if lines jump, flicker, or are drawn instantaneously."
+      },
+      {
+        "dimension": "Object Stability",
+        "weight": 2,
+        "description": "Objects and shapes must remain completely still. Deduct points if any movement, rotation, or resizing occurs."
+      },
+      {
+        "dimension": "Visual Cleanliness",
+        "weight": 1,
+        "description": "Background must stay white, clean, and consistent. Deduct 0.5–1 point for noise, color shifts, or artifacts."
+      },
+      {
+        "dimension": "Temporal Consistency",
+        "weight": 1,
+        "description": "The animation of line drawing should be temporally coherent. Deduct 0.5–1 point if frames are discontinuous or timing is irregular."
+      }
+    ],
+  
+    "final_score_formula": "Final_Score = Accuracy(0–4) + Line_Behavior(0–2) + Object_Stability(0–2) + Visual_Cleanliness(0–1) + Temporal_Consistency(0–1)",
+  
+    "max_score": 10,
+  
+    "evaluation_notes": [
+      "For automatic evaluation, use frame differencing and contour or shape-region matching to verify the correctness of connections.",
+      "For human evaluation, check each connection visually to confirm correct object–shape mapping and stability.",
+      "Any new elements, text, or extra motion results in deductions under cleanliness and stability criteria."
+    ]
+  }
+  ,
+
+"02": {
+  "task_description": "This task is a visual shadow-matching exercise. The input is a clean worksheet titled 'find the correct shadow', showing colorful insects on the left and their gray shadows on the right. The video model should only draw connecting lines between each insect and its correct shadow, without moving, resizing, or altering any objects. The background must remain completely white and unchanged. The animation should only show the smooth drawing of lines gradually appearing from left to right.",
+
+  "ground_truth_matching": {
+    "dragonfly": "second_from_bottom_shadow",
+    "butterfly": "top_shadow",
+    "ladybug": "bottom_shadow",
+    "bee": "second_shadow",
+    "caterpillar": "third_shadow"
+  },
+
+  "scoring_criteria": [
+    {
+      "dimension": "Accuracy",
+      "weight": 4,
+      "description": "1 point per correct line. No points for wrong or missing connections."
+    },
+    {
+      "dimension": "Line Behavior",
+      "weight": 2,
+      "description": "Lines should appear smoothly from left to right. Deduct 1–2 points if lines jump, flicker, or are drawn instantaneously."
+    },
+    {
+      "dimension": "Object Stability",
+      "weight": 2,
+      "description": "Insects and shadows must remain completely still. Deduct points if any movement, rotation, or resizing occurs."
+    },
+    {
+      "dimension": "Visual Cleanliness",
+      "weight": 1,
+      "description": "Background must stay white, clean, and consistent. Deduct 0.5–1 point for noise, color shifts, or artifacts."
+    },
+    {
+      "dimension": "Temporal Consistency",
+      "weight": 1,
+      "description": "The animation of line drawing should be temporally coherent. Deduct 0.5–1 point if frames are discontinuous or timing is irregular."
+    }
+  ],
+
+  "final_score_formula": "Final_Score = Accuracy(0–4) + Line_Behavior(0–2) + Object_Stability(0–2) + Visual_Cleanliness(0–1) + Temporal_Consistency(0–1)",
+
+  "max_score": 10,
+
+  "evaluation_notes": [
+    "For automatic evaluation, use frame differencing and contour or silhouette matching to verify the correctness of insect-to-shadow connections.",
+    "For human evaluation, check each connection visually to confirm correct insect–shadow mapping and stability.",
+    "Any new elements, text, or extra motion results in deductions under cleanliness and stability criteria."
+  ]
+}
+,
+
+"03": {
+  "task_description": "This task is a visual shadow-matching exercise. The input is a clean worksheet titled 'find the correct shadow', showing colorful hats and crowns on the left and their gray shadows on the right. The video model should only draw connecting lines between each item and its correct shadow, without moving, resizing, or altering any objects. The background must remain completely white and unchanged. The animation should only show the smooth drawing of lines gradually appearing from left to right.",
+
+  "ground_truth_matching": {
+    "pink_hat": "fourth_shadow",
+    "purple_wizard_hat": "bottom_shadow",
+    "yellow_hat": "top_shadow",
+    "elf_hat": "second_shadow",
+    "crown": "third_shadow"
+  },
+
+  "scoring_criteria": [
+    {
+      "dimension": "Accuracy",
+      "weight": 4,
+      "description": "1 point per correct line. No points for wrong or missing connections."
+    },
+    {
+      "dimension": "Line Behavior",
+      "weight": 2,
+      "description": "Lines should appear smoothly from left to right. Deduct 1–2 points if lines jump, flicker, or are drawn instantaneously."
+    },
+    {
+      "dimension": "Object Stability",
+      "weight": 2,
+      "description": "Hats, crowns, and shadows must remain completely still. Deduct points if any movement, rotation, or resizing occurs."
+    },
+    {
+      "dimension": "Visual Cleanliness",
+      "weight": 1,
+      "description": "Background must stay white, clean, and consistent. Deduct 0.5–1 point for noise, color shifts, or artifacts."
+    },
+    {
+      "dimension": "Temporal Consistency",
+      "weight": 1,
+      "description": "The animation of line drawing should be temporally coherent. Deduct 0.5–1 point if frames are discontinuous or timing is irregular."
+    }
+  ],
+
+  "final_score_formula": "Final_Score = Accuracy(0–4) + Line_Behavior(0–2) + Object_Stability(0–2) + Visual_Cleanliness(0–1) + Temporal_Consistency(0–1)",
+
+  "max_score": 10,
+
+  "evaluation_notes": [
+    "For automatic evaluation, use frame differencing and silhouette matching to verify the correctness of object-to-shadow connections.",
+    "For human evaluation, check each connection visually to confirm correct item–shadow mapping and stability.",
+    "Any new elements, text, or extra motion results in deductions under cleanliness and stability criteria."
+  ]
+}
+,
+"04": {
+  "task_description": "This task is a visual shape-matching exercise. The input is a clean white worksheet showing colorful objects on the left and gray silhouettes on the right. The video model should only draw connecting lines between matching pairs, without moving, resizing, or altering any objects. The background must remain completely white and unchanged. The animation should only show the smooth drawing of lines gradually appearing from left to right.",
+
+  "ground_truth_matching": {
+    "grapes": "middle_gray_shadow",
+    "peach": "bottom_gray_shadow",
+    "yellow_pepper": "top_gray_shadow"
+  },
+
+  "scoring_criteria": [
+    {
+      "dimension": "Accuracy",
+      "weight": 4,
+      "description": "1 point per correct line. No points for wrong or missing connections."
+    },
+    {
+      "dimension": "Line Behavior",
+      "weight": 2,
+      "description": "Lines should appear smoothly from left to right. Deduct 1–2 points if lines jump, flicker, or are drawn instantaneously."
+    },
+    {
+      "dimension": "Object Stability",
+      "weight": 2,
+      "description": "Objects and gray shadows must remain completely still. Deduct points if any movement, rotation, or resizing occurs."
+    },
+    {
+      "dimension": "Visual Cleanliness",
+      "weight": 1,
+      "description": "Background must stay white, clean, and consistent. Deduct 0.5–1 point for noise, color shifts, or artifacts."
+    },
+    {
+      "dimension": "Temporal Consistency",
+      "weight": 1,
+      "description": "The animation of line drawing should be temporally coherent. Deduct 0.5–1 point if frames are discontinuous or timing is irregular."
+    }
+  ],
+
+  "final_score_formula": "Final_Score = Accuracy(0–4) + Line_Behavior(0–2) + Object_Stability(0–2) + Visual_Cleanliness(0–1) + Temporal_Consistency(0–1)",
+
+  "max_score": 10,
+
+  "evaluation_notes": [
+    "For automatic evaluation, use frame differencing and contour matching to verify the correctness of shape connections.",
+    "For human evaluation, check each connection visually to confirm correct object–shadow mapping and stability.",
+    "Any new elements, text, or extra motion results in deductions under cleanliness and stability criteria."
+  ]
+},
+"05":{
+  "task_description": "This task is a visual shape-matching exercise. The input is a clean white worksheet titled 'Match the Shapes', showing colorful everyday objects on the left and basic geometric shapes on the right. The video model should only draw connecting lines between each object and the shape that matches it, without moving, resizing, or altering any objects. The background must remain completely white and unchanged. The animation should only show the smooth drawing of lines gradually appearing from left to right.",
+
+  "ground_truth_matching": {
+    "party_hat": "triangle",
+    "ruler": "rectangle",
+    "donut": "circle_with_hole",
+    "sunset_picture": "square",
+    "clock": "circle"
+  },
+
+  "scoring_criteria": [
+    {
+      "dimension": "Accuracy",
+      "weight": 4,
+      "description": "1 point per correct line. No points for wrong or missing connections."
+    },
+    {
+      "dimension": "Line Behavior",
+      "weight": 2,
+      "description": "Lines should appear smoothly from left to right. Deduct 1–2 points if lines jump, flicker, or are drawn instantaneously."
+    },
+    {
+      "dimension": "Object Stability",
+      "weight": 2,
+      "description": "Objects and shapes must remain completely still. Deduct points if any movement, rotation, or resizing occurs."
+    },
+    {
+      "dimension": "Visual Cleanliness",
+      "weight": 1,
+      "description": "Background must stay white, clean, and consistent. Deduct 0.5–1 point for noise, color shifts, or artifacts."
+    },
+    {
+      "dimension": "Temporal Consistency",
+      "weight": 1,
+      "description": "The animation of line drawing should be temporally coherent. Deduct 0.5–1 point if frames are discontinuous or timing is irregular."
+    }
+  ],
+
+  "final_score_formula": "Final_Score = Accuracy(0–4) + Line_Behavior(0–2) + Object_Stability(0–2) + Visual_Cleanliness(0–1) + Temporal_Consistency(0–1)",
+
+  "max_score": 10,
+
+  "evaluation_notes": [
+    "For automatic evaluation, use shape feature detection or contour matching to verify correct object–shape connections.",
+    "For human evaluation, check each connection visually to confirm correct geometric matching and scene stability.",
+    "Any new elements, text, or extra motion results in deductions under cleanliness and stability criteria."
+  ]
+}
+
+  
+}
+
+
+
+
+
+
+
+
+

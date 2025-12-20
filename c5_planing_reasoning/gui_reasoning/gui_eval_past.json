@@ -1,0 +1,20 @@
+{
+    "01": {
+      "video_path": "ViRe-WM/c5_planing_reasoning/gui_reasoning/generated_videos/kling/01_kling_test_01.mp4",
+      "autorater_config": {
+        "original_task_prompt": "Copy the email from the Word doc, paste it into the left Email field, then click next",
+        
+        "evaluation_rubric": "\n1.  **COPY_ACTION:**\n    1.1. Does the mouse cursor move to the right-hand document window (the Word document)?\n    1.2. Does the cursor select (highlight) the email text \"123456@gmail.com\"?\n\n2.  **PASTE_ACTION:**\n    2.1. Does the cursor move to the left-hand Chrome window and click inside the \"Email or phone\" input field?\n    2.2. **CRITICAL:** How is the text \"123456@gmail.com\" entered?\n         - **\"Paste\" (Correct):** The text appears all at once, instantaneously.\n         - **\"Type\" (Incorrect):** The text appears character by character.\n\n3.  **CLICK_ACTION:**\n    3.1. *After* the text is in the field, does the cursor move to the \"Next\" button?\n    3.2. Does the cursor perform a click action on the \"Next\" button?",
+        
+        "output_json_schema": "{\n  \"video_meets_requirements\": [true/false],\n  \"overall_score\": [A numerical score from 0.0 to 1.0, where 1.0 is a perfect execution of all steps in the correct order],\n  \"step_by_step_evaluation\": {\n    \"1_1_move_to_document\": {\n      \"observed\": [true/false],\n      \"comment\": \"[Cursor moved to the right window.]\" \n    },\n    \"1_2_select_text\": {\n      \"observed\": [true/false],\n      \"comment\": \"[Cursor highlighted '123456@gmail.com'.]\"\n    },\n    \"2_1_move_and_click_field\": {\n      \"observed\": [true/false],\n      \"comment\": \"[Cursor moved to and clicked the 'Email or phone' field.]\"\n    },\n    \"2_2_text_entry_method\": {\n      \"observed_method\": \"[paste/type/none]\",\n      \"is_correct\": [true/false], \n      \"comment\": \"[Text was pasted/typed/not entered.]\"\n    },\n    \"3_1_move_to_next_button\": {\n      \"observed\": [true/false],\n      \"comment\": \"[Cursor moved to 'Next' button after text entry.]\"\n    },\n    \"3_2_click_next\": {\n      \"observed\": [true/false],\n      \"comment\": \"[Cursor clicked the 'Next' button.]\"\n    }\n  },\n  \"evaluation_summary\": \"[Provide a final, human-readable summary here. Explain the score, especially noting if the paste-vs-type check failed (e.g., 'Task failed because the text was typed, not pasted, which violates the prompt.') or if steps were out of order.]\"\n}"
+      }
+    },
+    "gui_02_drag_and_drop": {
+      "video_path": "path/to/gui_02_video.mp4",
+      "autorater_config": {
+        "original_task_prompt": "Drag the file 'report.pdf' from the desktop and drop it into the 'Recycle Bin' icon.",
+        "evaluation_rubric": "\n1.  **GRASP_ACTION:**\n    1.1. Does the cursor move to the 'report.pdf' icon?\n    1.2. Does the cursor perform a 'click and hold' action?\n\n2.  **DRAG_ACTION:**\n    2.1. While holding, does the cursor move to the 'Recycle Bin' icon?\n\n3.  **DROP_ACTION:**\n    3.1. Does the cursor release the file over the 'Recycle Bin' icon?",
+        "output_json_schema": "{\n  \"video_meets_requirements\": [true/false],\n  \"overall_score\": [0.0 to 1.0],\n  \"step_by_step_evaluation\": {\n    \"1_1_move_to_file\": {\n      \"observed\": [true/false],\n      \"comment\": \"[Cursor moved to 'report.pdf'.]\"\n    },\n    \"1_2_grasp_file\": {\n      \"observed\": [true/false],\n      \"comment\": \"[Cursor clicked and held the file.]\"\n    },\n    \"2_1_drag_to_bin\": {\n      \"observed\": [true/false],\n      \"comment\": \"[Cursor dragged file to 'Recycle Bin'.]\"\n    },\n    \"3_1_drop_file\": {\n      \"observed\": [true/false],\n      \"comment\": \"[Cursor released file on the bin.]\"\n    }\n  },\n  \"evaluation_summary\": \"[Provide a summary of the drag and drop operation.]\"\n}"
+      }
+    }
+  }

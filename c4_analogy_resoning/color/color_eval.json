@@ -1,0 +1,27 @@
+{
+  "ColourBlue_42": {
+    "task_type": "Color",
+    "input_image_path": "algorithm_logic_reasoning/analogy/color/input_images/ColourBlue_42_0_combined_masked_0.50.jpg",
+    "gt_image_path": "algorithm_logic_reasoning/analogy/color/input_images/ColourBlue_42_0_combined_masked_0.50_gt_C.png",
+    "last_frame_image_path": "algorithm_logic_reasoning/analogy/color/generated_videos/kling/01_kling_test_ColourBlue_42.png",
+    "last_frame_image_path_half": "algorithm_logic_reasoning/analogy/color/generated_videos/kling/01_kling_test_ColourBlue_42_half.png",
+    "correct_answer": "C"
+  },
+  "ColourBlue_43": {
+    "task_type": "Color",
+    "input_image_path": "algorithm_logic_reasoning/analogy/color/input_images/ColourBlue_43_0_combined_masked_0.50.jpg",
+    "gt_image_path": "algorithm_logic_reasoning/analogy/color/input_images/ColourBlue_43_0_combined_masked_0.50_gt_B.png",
+    "last_frame_image_path": "algorithm_logic_reasoning/analogy/color/generated_videos/kling/02_kling_test_ColourBlue_43.png",
+    "last_frame_image_path_half": "algorithm_logic_reasoning/analogy/color/generated_videos/kling/02_kling_test_ColourBlue_43_half.png",
+    "correct_answer": "B"
+  },
+  "ColourRed_32": {
+    "task_type": "Color",
+    "input_image_path": "algorithm_logic_reasoning/analogy/color/input_images/ColourRed_32_0_combined_masked_0.50.jpg",
+    "gt_image_path": "algorithm_logic_reasoning/analogy/color/input_images/ColourRed_32_0_combined_masked_0.50_gt_B.png",
+    "last_frame_image_path": "algorithm_logic_reasoning/analogy/color/generated_videos/kling/03_kling_test_ColourRed_32.png",
+    "last_frame_image_path_half": "algorithm_logic_reasoning/analogy/color/generated_videos/kling/03_kling_test_ColourRed_32_half.png",
+    "correct_answer": "B"
+  }
+}
+

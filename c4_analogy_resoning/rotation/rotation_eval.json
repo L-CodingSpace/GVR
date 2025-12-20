@@ -1,0 +1,26 @@
+{
+  "2DRotation-90_1": {
+    "task_type": "Rotation",
+    "input_image_path": "algorithm_logic_reasoning/analogy/rotation/input_images/2DRotation-90_1_0_single.jpg",
+    "gt_image_path": "algorithm_logic_reasoning/analogy/rotation/input_images/2DRotation-90_1_0_single_gt_A.png",
+    "last_frame_image_path": "algorithm_logic_reasoning/analogy/rotation/generated_videos/kling/01_kling_test_2DRotation-90_1_single.png",
+    "last_frame_image_path_half": "algorithm_logic_reasoning/analogy/rotation/generated_videos/kling/01_kling_test_2DRotation-90_1_single_half.png",
+    "correct_answer": "A"
+  },
+  "2DRotation+90_5": {
+    "task_type": "Rotation",
+    "input_image_path": "algorithm_logic_reasoning/analogy/rotation/input_images/2DRotation+90_5_0_single.png",
+    "gt_image_path": "algorithm_logic_reasoning/analogy/rotation/input_images/2DRotation+90_5_0_single_gt_C.png",
+    "last_frame_image_path": "algorithm_logic_reasoning/analogy/rotation/generated_videos/kling/02_kling_test_2DRotation+90_5_single.png",
+    "last_frame_image_path_half": "algorithm_logic_reasoning/analogy/rotation/generated_videos/kling/02_kling_test_2DRotation+90_5_single_half.png",
+    "correct_answer": "C"
+  },
+  "2DRotation+90_9": {
+    "task_type": "Rotation",
+    "input_image_path": "algorithm_logic_reasoning/analogy/rotation/input_images/2DRotation+90_9_0_single.jpg",
+    "gt_image_path": "algorithm_logic_reasoning/analogy/rotation/input_images/2DRotation+90_9_0_single_gt_A.png",
+    "last_frame_image_path": "algorithm_logic_reasoning/analogy/rotation/generated_videos/kling/03_kling_test_2DRotation+90_9_single.png",
+    "last_frame_image_path_half": "algorithm_logic_reasoning/analogy/rotation/generated_videos/kling/03_kling_test_2DRotation+90_9_single_half.png",
+    "correct_answer": "A"
+  }
+}

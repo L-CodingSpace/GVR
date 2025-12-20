@@ -1,0 +1,84 @@
+# 大文件和生成的内容
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.wmv
+*.flv
+
+# 数据文件
+*.arrow
+*.parquet
+*.h5
+*.hdf5
+
+# 大图片文件（保留小的配置图片）
+*_unclipped.png
+*_unclipped.jpg
+*_unclipped.jpeg
+
+# 生成的视频目录
+generated_videos/
+0_generated_videos/
+
+# 临时和缓存文件
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.coverage
+.tox/
+.cache/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# IDE和编辑器文件
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# 日志文件
+*.log
+logs/
+
+# 环境变量文件
+.env
+.env.local
+.env.*.local
+
+# 模型文件
+*.pkl
+*.joblib
+*.model
+*.weights
+*.pt
+*.pth
+*.ckpt
+
+# 大的分析结果文件
+analysis_results*/
+temp_eval_configs/
+
+# Jupyter Notebook检查点
+.ipynb_checkpoints/
+
+# 系统文件
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db

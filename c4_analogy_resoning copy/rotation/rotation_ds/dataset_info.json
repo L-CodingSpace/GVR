@@ -1,0 +1,27 @@
+{
+  "citation": "",
+  "description": "",
+  "features": {
+    "id": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "image": {
+      "_type": "Image"
+    },
+    "i2v_prompt": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "eval_task_description": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "generated_video_path": {
+      "dtype": "string",
+      "_type": "Value"
+    }
+  },
+  "homepage": "",
+  "license": ""
+}

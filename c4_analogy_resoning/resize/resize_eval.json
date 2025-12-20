@@ -1,0 +1,27 @@
+{
+  "Resize0.5XY_44": {
+    "task_type": "Resize",
+    "input_image_path": "algorithm_logic_reasoning/analogy/resize/input_images/Resize0.5XY_44_0_combined_masked_0.50.jpg",
+    "gt_image_path": "algorithm_logic_reasoning/analogy/resize/input_images/Resize0.5XY_44_0_combined_masked_0.50_gt_C.png",
+    "last_frame_image_path": "algorithm_logic_reasoning/analogy/resize/generated_videos/kling/01_kling_test_Resize0.5XY_44.png",
+    "last_frame_image_path_half": "algorithm_logic_reasoning/analogy/resize/generated_videos/kling/01_kling_test_Resize0.5XY_44_half.png",
+    "correct_answer": "C"
+  },
+  "Resize2XY_27": {
+    "task_type": "Resize",
+    "input_image_path": "algorithm_logic_reasoning/analogy/resize/input_images/Resize2XY_27_0_combined_masked_0.50.jpg",
+    "gt_image_path": "algorithm_logic_reasoning/analogy/resize/input_images/Resize2XY_27_0_combined_masked_0.50_gt_C.png",
+    "last_frame_image_path": "algorithm_logic_reasoning/analogy/resize/generated_videos/kling/02_kling_test_Resize2XY_27.png",
+    "last_frame_image_path_half": "algorithm_logic_reasoning/analogy/resize/generated_videos/kling/02_kling_test_Resize2XY_27_half.png",
+    "correct_answer": "C"
+  },
+  "Resize2XY_41": {
+    "task_type": "Resize",
+    "input_image_path": "algorithm_logic_reasoning/analogy/resize/input_images/Resize2XY_41_0_combined_masked_0.50.jpg",
+    "gt_image_path": "algorithm_logic_reasoning/analogy/resize/input_images/Resize2XY_41_0_combined_masked_0.50_gt_C.png",
+    "last_frame_image_path": "algorithm_logic_reasoning/analogy/resize/generated_videos/kling/03_kling_test_Resize2XY_41.png",
+    "last_frame_image_path_half": "algorithm_logic_reasoning/analogy/resize/generated_videos/kling/03_kling_test_Resize2XY_41_half.png",
+    "correct_answer": "C"
+  }
+}
+

@@ -1,0 +1,27 @@
+{
+  "ReflectY_19": {
+    "task_type": "Reflect",
+    "input_image_path": "algorithm_logic_reasoning/analogy/reflect/input_images/ReflectY_19_0_combined_masked_0.50.jpg",
+    "gt_image_path": "algorithm_logic_reasoning/analogy/reflect/input_images/ReflectY_19_0_combined_masked_0.50_gt_C.png",
+    "last_frame_image_path": "algorithm_logic_reasoning/analogy/reflect/generated_videos/kling/01_kling_test_ReflectY_19.png",
+    "last_frame_image_path_half": "algorithm_logic_reasoning/analogy/reflect/generated_videos/kling/01_kling_test_ReflectY_19_half.png",
+    "correct_answer": "C"
+  },
+  "ReflectY_24": {
+    "task_type": "Reflect",
+    "input_image_path": "algorithm_logic_reasoning/analogy/reflect/input_images/ReflectY_24_0_combined_masked_0.50.jpg",
+    "gt_image_path": "algorithm_logic_reasoning/analogy/reflect/input_images/ReflectY_24_0_combined_masked_0.50_gt_C.png",
+    "last_frame_image_path": "algorithm_logic_reasoning/analogy/reflect/generated_videos/kling/02_kling_test_ReflectY_24.png",
+    "last_frame_image_path_half": "algorithm_logic_reasoning/analogy/reflect/generated_videos/kling/02_kling_test_ReflectY_24_half.png",
+    "correct_answer": "C"
+  },
+  "ReflectY_43": {
+    "task_type": "Reflect",
+    "input_image_path": "algorithm_logic_reasoning/analogy/reflect/input_images/ReflectY_43_0_combined_masked_0.50.jpg",
+    "gt_image_path": "algorithm_logic_reasoning/analogy/reflect/input_images/ReflectY_43_0_combined_masked_0.50_gt_A.png",
+    "last_frame_image_path": "algorithm_logic_reasoning/analogy/reflect/generated_videos/kling/03_kling_test_ReflectY_43.png",
+    "last_frame_image_path_half": "algorithm_logic_reasoning/analogy/reflect/generated_videos/kling/03_kling_test_ReflectY_43_half.png",
+    "correct_answer": "A"
+  }
+}
+
